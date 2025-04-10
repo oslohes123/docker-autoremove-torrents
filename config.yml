@@ -1,0 +1,19 @@
+my_task:
+  client: qbittorrent
+  host: http://127.0.0.1:8080
+  username: admin
+  password: yourpassword
+  strategies:
+    some_strat:
+      trackers:
+        - sometrackerurl
+      remove: seeding_time > 5259492
+      # 2 months for mams to get some big points
+    all_else:
+      all_trackers: true
+      excluded_trackers:
+        - someexcludedtrackerurl
+      remove: seeding_time > 864000
+      # Everything else gets deleted in 10 days
+
+  delete_data: true

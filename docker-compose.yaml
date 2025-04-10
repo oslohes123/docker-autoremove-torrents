@@ -1,0 +1,9 @@
+services:
+  autoremove-torrents:
+    image: theduke203/autoremove-torrents:latest
+    container_name: auto-remove-torrents
+    volumes:
+      - ./config.yml:/app/config.yml
+      - ./logs:/logs
+    restart: unless-stopped
+    network_mode: host
