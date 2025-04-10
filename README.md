@@ -14,11 +14,11 @@ Image for the PyPi module autoremove-torrents.
 https://pypi.org/project/autoremove-torrents/
 
 ## Usage
+Put the compose file in some folder and also the config.yml in the same folder an example is given make sure to fill out your username and password
 
-    docker run dantebarba/autoremove-torrents:latest -v /path/to/config.yml:/app/config.yml -e OPTS=customoptions
 
+## Ignore this it didn't work when I tried it
 OPTS can take the following arguments:
-
 <table border="1" class="docutils">
 <colgroup>
 <col width="33%">
