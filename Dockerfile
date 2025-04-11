@@ -20,7 +20,7 @@ RUN touch /var/log/autoremove-torrents.log
 
 COPY config.example.yml config.yml
 
-ENV OPTS '-c /app/config.yml'
+ENV OPTS '-c /app/config.yml -l /logs/'
 ENV CRON '*/5 * * * *'
 
 ENTRYPOINT ["/bin/sh", "/usr/bin/cron.sh"]
